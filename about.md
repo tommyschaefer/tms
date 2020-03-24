@@ -19,11 +19,7 @@ about problems.
 Some things I'm having fun practicing right now:
 
 - Making bread
-
 - Functional programming, primarily with Elixir
-
 - Surgical suturing
-
 - Tailwind CSS
-
 - Making good pourover coffee
