@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li class="mb-24">
+      {% include post_title.html post=post %}
+
+      <article>
+        {{ post.content }}
+      </article>
+    </li>
+  {% endfor %}
+</ul>

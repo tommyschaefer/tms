@@ -7,3 +7,111 @@
 
 @import "tailwindcss/utilities";
 
+body {
+  @apply bg-gray-100;
+}
+
+.text-secondary {
+  @apply text-gray-700;
+}
+
+article h1 {
+  @apply text-2xl;
+  @apply font-bold;
+}
+
+article h2 {
+  @apply text-xl;
+  @apply font-semibold;
+}
+
+article h3 {
+  @apply text-xl;
+  @apply font-medium;
+}
+
+article h4 {
+  @apply font-semibold;
+}
+
+article p {
+  @apply my-4;
+  @apply leading-relaxed;
+}
+
+article a {
+  @apply text-red-600;
+  @apply border-b;
+  @apply border-transparent;
+}
+
+article a:hover,
+article a:focus {
+  @apply border-red-500;
+}
+
+article img {
+  @apply w-full;
+  @apply my-6;
+}
+
+article ul {
+  @apply list-disc;
+  @apply list-outside;
+  @apply ml-10;
+}
+
+article ol {
+  @apply list-decimal;
+  @apply list-outside;
+  @apply ml-10;
+}
+
+article blockquote {
+  @apply border-l-4;
+  @apply border-red-500;
+  @apply pl-4;
+  @apply text-gray-800;
+  @apply my-2;
+}
+
+article code {
+  @apply font-mono;
+  @apply text-sm;
+  @apply bg-gray-200;
+  @apply py-1;
+  @apply px-2;
+  @apply rounded;
+}
+
+article pre {
+  @apply font-mono;
+  @apply text-sm;
+  @apply my-2;
+}
+
+article pre code {
+  @apply block;
+  @apply px-3;
+  @apply py-2;
+  @apply overflow-x-auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    @apply text-white;
+    @apply bg-gray-900;
+  }
+
+  .text-secondary {
+    @apply text-gray-400;
+  }
+
+  article blockquote {
+    @apply text-gray-400;
+  }
+
+  article code {
+    @apply bg-gray-800;
+  }
+}
