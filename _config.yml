@@ -1,0 +1,21 @@
+plugins:
+  - jekyll-feed
+  - jekyll-postcss
+  - jekyll-purgecss
+
+exclude:
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - yarn.lock
+  - postcss.config.js
+  - purgecss.config.js
+  - netlify.toml
+  - bin
