@@ -4,16 +4,16 @@ raise "Missing argument: post name" if ARGV.empty?
 
 require "date"
 
-post_title = ARGV.join(" ")
+post_title, post_link = ARGV.join(" ").split(" -- ")
 post_date = Date.today.to_s
-file_path = "./_posts/#{post_date}-#{ARGV.join("-").gsub(/:/, "").downcase}.md"
+file_path = "./_posts/#{post_date}-#{post_title.gsub(" ", "-").downcase}.md"
 
 raise "File already exists" if File.exists? file_path
 
 front_matter = <<~FRONTMATTER
 ---
 layout: post
-title: #{post_title.gsub(/:/, "&#58;")}
+title: #{post_title.gsub(/:/, "&#58;")}#{"\nlink: " + post_link if post_link}
 ---
 FRONTMATTER
 
