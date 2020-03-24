@@ -1,7 +1,7 @@
-—-
+—--
 layout: post
 title: Programming blogs that I read regularly
-—-
+—--
 
 Recently one of my coworkers asked for some programming-related blog recommendations. Here are some of my favorites that I read regularly:
 
