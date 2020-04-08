@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<ul class="list-disc list-inside ml-5">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}" class="border-b border-transparent text-red-600 hover:border-red-500 focus:border-red-500">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>
