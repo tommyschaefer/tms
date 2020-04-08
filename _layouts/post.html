@@ -6,4 +6,10 @@ layout: default
 
 <article>
   {{ content }}
+
+  {% if page.originally_posted_on %}
+    <hr class="mt-6 py-2 border-gray-600" />
+
+    <i>Originally posted on the <a href="{{ page.link }}">{{ page.originally_posted_on }}</a>.</i>
+  {% endif %}
 </article>
